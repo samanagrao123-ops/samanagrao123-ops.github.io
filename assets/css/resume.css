@@ -1,0 +1,417 @@
+/* ===================================================================
+   SAMANA G RAO - PROFESSIONAL RESUME STYLES
+   Screen: Modern Obsidian Dark Theme
+   Print / PDF: Clean, High-Contrast ATS-Friendly Executive Layout
+   =================================================================== */
+
+:root {
+  --bg-primary: #070b14;
+  --bg-secondary: #0d1527;
+  --bg-card: rgba(15, 23, 42, 0.85);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-accent: rgba(56, 189, 248, 0.35);
+
+  --text-main: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  --accent-cyan: #38bdf8;
+  --accent-emerald: #34d399;
+  --accent-amber: #fbbf24;
+  --accent-indigo: #818cf8;
+
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.resume-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(7, 11, 20, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toolbar-left, .toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0284c7, #2563eb);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.5);
+}
+
+.btn-emerald {
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: #ffffff;
+}
+
+.btn-emerald:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.45);
+}
+
+.btn-outline {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border-color: var(--accent-cyan);
+}
+
+.resume-wrapper {
+  max-width: 900px;
+  margin: 2.5rem auto 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.resume-paper {
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: 16px;
+  padding: 3.5rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+/* Header */
+.resume-header {
+  border-bottom: 2px solid var(--border-accent);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.resume-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+}
+
+.resume-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-bottom: 1rem;
+}
+
+.resume-contact-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.contact-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-pill:hover {
+  color: var(--accent-cyan);
+}
+
+.contact-pill i {
+  color: var(--accent-cyan);
+}
+
+/* Sections */
+.resume-section {
+  margin-bottom: 2rem;
+}
+
+.section-heading {
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.25rem;
+}
+
+.section-heading i {
+  font-size: 1rem;
+  color: var(--accent-emerald);
+}
+
+.resume-block {
+  margin-bottom: 1.5rem;
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.block-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.block-subtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.block-date {
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  color: var(--accent-cyan);
+  font-weight: 500;
+}
+
+.block-location {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.resume-bullet-list {
+  list-style: none;
+  padding-left: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.resume-bullet-list li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.45rem;
+  line-height: 1.6;
+}
+
+.resume-bullet-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent-emerald);
+  font-size: 1rem;
+}
+
+/* Skills Matrix */
+.skills-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 1rem;
+  font-size: 0.9rem;
+  align-items: baseline;
+}
+
+.skill-group-name {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.skill-list {
+  color: var(--text-secondary);
+}
+
+/* Honors & Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  background: rgba(251, 191, 36, 0.15);
+  color: var(--accent-amber);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+/* ===================================================================
+   PRINT & PDF EXPORT OPTIMIZATIONS (@media print)
+   Converts dark theme to crisp, high-contrast, ATS-friendly paper
+   =================================================================== */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    font-size: 11pt !important;
+    line-height: 1.45 !important;
+  }
+
+  .resume-toolbar, .no-print {
+    display: none !important;
+  }
+
+  .resume-wrapper {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .resume-paper {
+    background: #ffffff !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .resume-header {
+    border-bottom: 2pt solid #0284c7 !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .resume-name {
+    color: #0f172a !important;
+    font-size: 22pt !important;
+  }
+
+  .resume-title {
+    color: #0284c7 !important;
+    font-size: 12pt !important;
+  }
+
+  .contact-pill {
+    color: #334155 !important;
+  }
+
+  .contact-pill i {
+    color: #0284c7 !important;
+  }
+
+  .section-heading {
+    color: #0369a1 !important;
+    border-bottom: 1pt solid #cbd5e1 !important;
+    margin-bottom: 0.8rem !important;
+    font-size: 11pt !important;
+  }
+
+  .section-heading i {
+    color: #059669 !important;
+  }
+
+  .block-title {
+    color: #0f172a !important;
+    font-size: 11pt !important;
+  }
+
+  .block-subtitle {
+    color: #334155 !important;
+  }
+
+  .block-date {
+    color: #475569 !important;
+    font-size: 9pt !important;
+  }
+
+  .resume-bullet-list li {
+    color: #334155 !important;
+    margin-bottom: 0.3rem !important;
+  }
+
+  .resume-bullet-list li::before {
+    color: #0284c7 !important;
+  }
+
+  .skill-group-name {
+    color: #0f172a !important;
+  }
+
+  .skill-list {
+    color: #334155 !important;
+  }
+
+  .badge {
+    background: #fef3c7 !important;
+    color: #92400e !important;
+    border: 1pt solid #f59e0b !important;
+  }
+
+  a {
+    color: #0369a1 !important;
+    text-decoration: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-paper {
+    padding: 2rem 1.25rem;
+  }
+
+  .resume-name {
+    font-size: 1.9rem;
+  }
+
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .block-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+}
