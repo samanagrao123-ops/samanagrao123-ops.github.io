@@ -42,6 +42,7 @@
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#certificates" class="nav-link">Certificates</a></li>
         <li><a href="#experience" class="nav-link">Timeline</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
@@ -742,25 +743,85 @@
   </section>
 
   <!-- =================================================================
-       RESUME BANNER CTA SECTION
+       RESUME & CREDENTIALS SHOWCASE SECTION
        ================================================================= -->
-  <section class="section" style="padding-top: 20px; padding-bottom: 20px;">
+  <section class="section" id="resume">
     <div class="container">
-      <div class="resume-banner">
-        <div class="resume-banner-text">
-          <span class="badge badge-cyan" style="margin-bottom: 0.75rem;"><i class="fas fa-file-pdf"></i> Verified Profile</span>
-          <h3>Looking for a Complete, Printable Resume?</h3>
-          <p>
-            I've built a dedicated, ATS-optimized, modern dark-themed resume view featuring detailed breakdowns of my coursework, hackathon achievements, certifications, and technical stack.
-          </p>
+      <div class="section-header">
+        <span class="section-tag">Curriculum Vitae</span>
+        <h2 class="section-title">Official Resume & Credentials</h2>
+        <p class="section-subtitle">A concise executive summary of my academic foundation, hackathon honors, technical competencies, and industry experience.</p>
+      </div>
+
+      <!-- Executive Resume Showcase Card -->
+      <div class="resume-showcase-card">
+        <div class="resume-showcase-header">
+          <div class="resume-showcase-photo-wrap">
+            <img src="assets/images/profile-photo.png" alt="Samana G Rao" class="resume-showcase-photo">
+            <div class="resume-showcase-badge" title="Verified Engineering Profile">
+              <i class="fas fa-check"></i>
+            </div>
+          </div>
+
+          <div class="resume-showcase-info">
+            <span class="badge badge-emerald" style="margin-bottom: 0.5rem;">
+              <i class="fas fa-user-graduate"></i> Engineering Undergraduate
+            </span>
+            <h3>Samana G Rao</h3>
+            <p>Artificial Intelligence & Data Science Engineering Student • Aspiring Tech Entrepreneur</p>
+            <div class="resume-showcase-chips">
+              <span><i class="fas fa-university"></i> SMVITM College, Udupi (VTU)</span>
+              <span><i class="fas fa-map-marker-alt" style="color: var(--accent-rose);"></i> Mysore, Karnataka</span>
+              <span><i class="fas fa-envelope"></i> samanagrao123@gmail.com</span>
+              <span><i class="fab fa-github"></i> samanagrao123-ops</span>
+            </div>
+          </div>
         </div>
-        <div class="resume-banner-actions">
-          <a href="resume.html" class="btn btn-primary">
-            <i class="fas fa-eye"></i> View Full Resume Page
-          </a>
-          <a href="resume.html?action=print" class="btn btn-emerald">
-            <i class="fas fa-print"></i> Print / Save as PDF
-          </a>
+
+        <!-- 4 Highlights Grid -->
+        <div class="resume-showcase-grid">
+          <div class="resume-showcase-item">
+            <h4><i class="fas fa-graduation-cap"></i> Academics</h4>
+            <p>B.E. in Artificial Intelligence & Data Science</p>
+            <small>SMVITM College (AICTE Approved, NAAC 'A' Grade, VTU Belagavi)</small>
+          </div>
+
+          <div class="resume-showcase-item">
+            <h4><i class="fas fa-briefcase"></i> Experience</h4>
+            <p>AI Intern at iStudio Technologies</p>
+            <small>Selected via iCAT Aptitude Test • Practical AI Models & Systems</small>
+          </div>
+
+          <div class="resume-showcase-item">
+            <h4><i class="fas fa-trophy" style="color: var(--accent-amber);"></i> Top Honor</h4>
+            <p>2nd Runner Up - Hackathon Premier League</p>
+            <small>Built & Pitched Ayuressence (Evidence-based Ayurvedic Platform)</small>
+          </div>
+
+          <div class="resume-showcase-item">
+            <h4><i class="fas fa-layer-group" style="color: var(--accent-emerald);"></i> Core Stack</h4>
+            <p>Java, Python, C++, Web & AI</p>
+            <small>MongoDB, SQL, Prompt Engineering, Agentic AI, Data Analytics</small>
+          </div>
+        </div>
+
+        <div class="resume-showcase-footer">
+          <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-muted); font-size: 0.88rem;">
+            <i class="fas fa-file-alt" style="color: var(--accent-cyan);"></i>
+            <span>Complete, printable 2-page ATS resume with full course and project details.</span>
+          </div>
+
+          <div class="resume-showcase-actions">
+            <a href="resume.html" class="btn btn-primary">
+              <i class="fas fa-external-link-alt"></i> View Full Resume Page
+            </a>
+            <a href="resume.html?action=print" class="btn btn-emerald">
+              <i class="fas fa-print"></i> Print / Save as PDF
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
         </div>
       </div>
     </div>
